@@ -1,11 +1,11 @@
-# [Título del trabajo]
+# Sistema control nevera
 
-[Descripción breve del proyecto a realizar (2-3 frases).]
+[El programa consiste en un conjunto de sensores que nos permiten controlar nuestro frigorifico a distancia mediante un sensor de temperatura y otro que detecte cuado se abre. Este ultimo sensor activará un contador de tiempo y cuando pase dicho tiempo avisara al usario de que la nevera lleva mas tiempo abierta que el deseado. Este tiempo será establecido por el usuario.]
 
-## Integrantes del equipo
+## Manuel Vallina Vides; Javier Serrano Molina; Daniel Vázquez Chuvieco.
 
-[Nombres, apellidos, y usuario GitHub de los integrantes del equipo.]
+PONED VUESTRO ID DanielVazquezChuvieco
 
 ## Objetivos del trabajo
 
-[Lista de los objetivos que se persiguen con el trabajo propuesto.]
+[Los objetivos del trabajo son conseguir un sistema monotorizado de un frigorifico mediante el uso de sesores para detectar la temperatura de la nevera y un sensor que detecte cuando se abre la nevera. Con este ultimo sensor se implementaría una alarma que avisase al usuario cuando la nevera estuviese abierta mas del tiempo establecido.]
