@@ -1,7 +1,10 @@
-Datos
-Primer apellido	Segundo Apellido	Nombre	E-Mail (alumnos.upm.es)           Dni 
+DATOS
+
+
 Serrano         Molina	          Javier	javier.sermolina@alumnos.upm.es	  54195610C
-Vázquez	        Chuvieco	        Daniel	daniel.vazquezch@ alumnos.upm.es  12449302T
+
+Vázquez	        Chuvieco	        Daniel	daniel.vazquezch@alumnos.upm.es  12449302T
+
 Vallina	        Vides 	          Manuel	manuel.vallina@alumnos.upm.es   	48226312G
 
 Nombre del proyecto.
@@ -13,14 +16,20 @@ Con este proyecto pretendemos aprender sobre Arduino y la electrónica en genera
 Plataforma basada en microcontrolador, sensores, indicadores y actuadores previstos.
 
 •	Placa base Arduino uno.
+
 •	Sensor de temperatura y humedad(DHT22).
+
 •	Sistema de refrigeración.
+
 •	Sensores de ultrasonidos HC-SR04.
+
 •	Un módulo display Bundle(HD44780).
+
 •	Cintas de luces.
 
 
-Requisitos funcionales
+
+REQUISITOS FUNCIONALES
 
 •	Mediante un sensor DHT22, podremos medir la temperatura y la humedad dentro del dispositivo
 
