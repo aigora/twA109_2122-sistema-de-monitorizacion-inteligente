@@ -45,7 +45,7 @@ return opcion;
 int main(void)
 {
 	Serial* Arduino;
-	char puerto[] = "COM8"; // Puerto serie al que est· conectado Arduino
+	char puerto[] = "COM8"; // Puerto serie al que est√° conectado Arduino
 	int opcion_menu;
 	setlocale(LC_ALL, "es-ES");
 	Arduino = new Serial((char*)puerto);
@@ -55,23 +55,23 @@ int main(void)
 		switch (opcion_menu)
 		{
 		case 1:
-			printf("todavÌa estamos trabajando en ello,disculpe las molestias.\n");
+			printf("todav√≠a estamos trabajando en ello,disculpe las molestias.\n");
 			break;
 		case 2:
 			verifica_Temperatura(Arduino, puerto);
 			break;
 		case 3:
-			printf("todavÌa estamos trabajando en ello,disculpe las molestias.\n");
+			printf("todav√≠a estamos trabajando en ello,disculpe las molestias.\n");
 			break;
 		case 4:
-			printf("todavÌa estamos trabajando en ello,disculpe las molestias.\n");
+			printf("todav√≠a estamos trabajando en ello,disculpe las molestias.\n");
 			break;
 		case 5:
-			printf("todavÌa estamos trabajando en ello,disculpe las molestias.\n");
+			printf("todav√≠a estamos trabajando en ello,disculpe las molestias.\n");
 			break;
 		case 6:
 			break;
-		//default: printf("\nOpciÛn incorrecta\n");
+		//default: printf("\nOpci√≥n incorrecta\n");
 		}
 	} while (opcion_menu != 6);
 	return 0;
@@ -89,7 +89,7 @@ int main(void)
 		else
 		{
 			printf("\nNo se ha podido conectar con Arduino.\n");
-			printf("Revise la conexiÛn, el puerto %s y desactive el monitor serie delIDE de Arduino.\n",port);
+			printf("Revise la conexi√≥n, el puerto %s y desactive el monitor serie delIDE de Arduino.\n",port);
 		}
 	}
 	float leer_sensor_Temperatura(Serial* Arduino)
@@ -101,7 +101,7 @@ int main(void)
 		bytesRecibidos = Enviar_y_Recibir(Arduino, "GET_TEMPERATURA\n", mensaje_recibido);
 		if (bytesRecibidos <= 0)
 		{
-			printf("\nNo se ha recibido respuesta a la peticiÛn\n");
+			printf("\nNo se ha recibido respuesta a la petici√≥n\n");
 			temperatura = -1;
 		}
 		else
@@ -146,14 +146,14 @@ int main(void)
 		for (i = 0; cadena[i] != '\0' && estado != 3 && i < MAX_BUFFER; i++)
 			switch (estado)
 			{
-			case 0:// Antes del n˙mero
+			case 0:// Antes del n√∫mero
 				if (cadena[i] >= '0' && cadena[i] <= '9')
 				{
 					numero = cadena[i] - '0';
 					estado = 1;
 				}
 				break;
-			case 1:// Durante el n˙mero
+			case 1:// Durante el n√∫mero
 				if (cadena[i] >= '0' && cadena[i] <= '9')
 					numero = numero * 10 + cadena[i] - '0';
 				else
@@ -183,7 +183,7 @@ int main(void)
 			printf("Establezca frecuencia de muestreo (0,5 Hz - 2,0 Hz):");
 			scanf_s("%f", &frecuencia);
 		} while (frecuencia < 0.5 || frecuencia>2.0);
-		printf("Pulse una tecla para finalizar la monitorizaciÛn\n");
+		printf("Pulse una tecla para finalizar la monitorizaci√≥n\n");
 		do
 		{
 			if (Arduino->IsConnected())
